@@ -1,0 +1,25 @@
+package challenge;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Problem8 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("나눗셈을 수행할 두 정수를 입력하세요.");
+		
+		
+		try {
+			int num1 = sc.nextInt();
+			int num2 = sc.nextInt();
+			System.out.println(num1/num2);
+		} catch (InputMismatchException e) {
+			System.out.println("입력은 정수만 할 수 있습니다.");
+		} catch (ArithmeticException e) {
+			System.out.println("0으로 나눗셈을 수행할 수 없습니다.");
+		}
+	}
+
+}

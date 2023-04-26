@@ -1,0 +1,23 @@
+package ex01.basic;
+
+public class Hello {
+
+	public static void main(String[] args) { // 컴파일러의 시작점은 메인메서드이다
+		System.out/* field */.print("print method");
+		System.out.println("\n\nprin\t\ttln met\thod");
+		System.out.printf("%d %.3f %c %s", 100, 12.34, 'A', "kbs");
+		
+		System.out.println();
+		System.out.println(100);
+		System.out.println("String data");
+		System.out.println(12.3456);
+		System.out.println('K');
+		System.out.println(true);
+	}
+
+}
+
+// package > class > method > field
+// 모든 프로그램은 메모리상에 할당이 안되어 있으면 사용할 수 없다.
+// 제어문자: \n, \t, \a, \b, ...
+// 출력서식: %문자

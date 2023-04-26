@@ -1,0 +1,13 @@
+package ex02.api;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		String str = "abc";
+		System.out.println("str = " + str);
+		
+		int x = 3, y = 3;
+		System.out.println("x = " + x + ", y = " + y);
+		
+		System.out.println("str.hashCode() = " + str.hashCode());
+	}
+}

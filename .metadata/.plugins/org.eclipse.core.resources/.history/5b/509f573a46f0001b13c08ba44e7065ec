@@ -1,0 +1,61 @@
+package ex03.operator;
+
+public class OperatorTest {
+
+	public static void main(String[] args) {
+		// 2진 논리: 결과값이 10진수 값으로 나옴
+		int x = 4, y = 7;
+		System.out.println(x & y); // 0100(2) & 0111(2) = 0100(2) = 4
+		System.out.println(x | y); // 0100(2) | 0111(2) = 0111(2) = 7
+
+		// 10진 논리: 결과값이 boolean으로 나옴
+		boolean flag = false;
+		int a = 10, b = 20, c = 30;
+
+		
+		flag = (a < b) && (b < c);
+		System.out.println(flag);
+		
+		flag = (a > b) && (b < c); // '&&'연산은 앞의 조건이 거짓이면 뒤의 조건은 수행하지 않는다.
+		System.out.println(flag);
+		
+		flag = (a < b) || (b < c); // '||' 연산은 앞의 조건이 참이면 뒤의 조건은 수행하지 않는다.
+		System.out.println(flag);
+		
+		// 삼항연산자
+		int su = 3;
+		String str = null;
+		str = (su == 3) ? "같다" : "다르다";
+		System.out.println(str);
+		
+		// 로컬 변수는 선언 후 초기화를 개발자가 해주어야 한다.
+		int xx,yy,zz; // 왜 에러남? -> 해결!
+//		System.out.println(x); // 초기화를 하지 않아 에러 발생
+		xx = yy = zz = 100;
+		System.out.println(xx);
+		
+		// 문제1
+		int pay = 567890;
+		for(int i = 10000; i >= 10; i/=10) {
+			System.out.println(numToKor(i)+"원: " + pay/i + "장" );
+			pay %= i;
+		}
+		
+		// 문제2
+		
+	}
+	public static String numToKor(int num) {
+		switch(num) {
+		case 10000:
+			return "만";
+		case 1000:
+			return "천";
+		case 100:
+			return "백";
+		case 10:
+			return "십";
+		default:
+			return " ";
+		}
+	}
+}

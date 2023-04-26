@@ -1,0 +1,33 @@
+package ex02.api;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		
+		String s1 = new String("Korea");
+		String s2 = new String("Korea");
+		
+		int x = 3, y = 3;
+		
+		if (x==y) {
+			System.out.println("x==y");
+		} else {
+			System.out.println("x!=y");
+		}
+		
+		System.out.println("====================");
+		
+		if (s1==s2) {
+			System.out.println("s1==s2");
+		} else {
+			System.out.println("s1!=s2");
+		}
+//		String str = "abc";
+//		System.out.println("str = " + str);
+//		
+//		int x = 3, y = 3;
+//		System.out.println("x = " + x + ", y = " + y);
+//		
+//		System.out.println("str.toString() = " + str.toString());
+//		System.out.println("str.hashCode() = " + str.hashCode());
+	}
+}

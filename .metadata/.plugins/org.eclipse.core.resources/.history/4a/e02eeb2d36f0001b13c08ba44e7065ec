@@ -1,0 +1,12 @@
+package ex03.operator;
+
+public class OperatorTest {
+
+	public static void main(String[] args) {
+		int x = 4, y = 7;
+		// 2진 논리: 결과값이 이진값으로 나옴
+		System.out.println(x & y); // 0100(2) & 0111(2) = 0100(2)
+		System.out.println(x | y); // 0100(2) | 0111(2) = 0111(2)
+		// 10진 논리: 결과값이 boolean으로 나옴
+	}
+}

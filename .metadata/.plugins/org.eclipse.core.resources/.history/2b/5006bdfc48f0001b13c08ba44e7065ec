@@ -1,0 +1,22 @@
+package challenge;
+
+import java.util.Scanner;
+
+public class Problem8 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("나눗셈을 수행할 두 정수를 입력하세요.");
+		
+		
+		try {
+			int num1 = sc.nextInt();
+			int num2 = sc.nextInt();
+			System.out.println(num1/num2);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

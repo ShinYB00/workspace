@@ -1,0 +1,31 @@
+package ex02.dataType;
+
+public class DataType {
+	public static void main(String[] args) {
+		// 한 줄 주석
+		
+		/*
+		 * 여러줄 주석
+		 */
+		
+		/**
+		 * Doc 주석
+		 */
+		
+		System.out.println(100); // int
+		System.out.println(100L); // long
+		System.out.println(3.14); // double
+		System.out.println(3.14f); // float
+		
+		// float a = 3.14;	// 에러. 우측에 있는 것을 좌측에 대입하는 형태인데(단항, 삼항, 대입연산자의 경우만) 우측 자료는 double, 좌측 변수는 float이기 때문.
+		
+		
+		short sh = 32767; // short: -32768~32767
+		int iNum = 32768; // int: -21억~21억
+		
+//		sh = (short)iNum;	// 명시적 형변환 해야됨. 작은 저장 공간에 범위보다 큰 값이 저장될 수 없음. 이 때 명시적 형변환 이용하면 데이터 손실 발생  (오버플로우)
+//		iNum = sh;	// 묵시적 형변환: 작은 데이터형이 큰 데이터형으로 자동 형변환
+		sh = (short)iNum;
+		System.out.println(sh);
+	}
+}

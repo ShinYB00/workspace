@@ -1,0 +1,17 @@
+package ex04.control;
+
+import java.util.Scanner;
+
+public class ScannerTest {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("integer data 2개 입력하세요: ");
+		int su1 = sc.nextInt();
+		int su2 = sc.nextInt();
+		
+		System.out.println(su1 + " + " + su2 + " = " + su1 + su2);
+	}
+
+}

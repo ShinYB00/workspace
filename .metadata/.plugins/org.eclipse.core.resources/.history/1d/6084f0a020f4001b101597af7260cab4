@@ -1,0 +1,17 @@
+package ex06.collection.list;
+
+import java.util.Vector;
+
+public class VectorEx01 {
+	public static void main(String[] args) {
+		Vector<String> hs = new Vector<>();
+		hs.add("키보드");
+		hs.add("컵");
+		hs.add("마우스");
+		hs.add("볼펜");
+		hs.add("키보드");
+		
+		System.out.println("요소 개수: " + hs.size());
+		System.out.println(hs);
+	}
+}
